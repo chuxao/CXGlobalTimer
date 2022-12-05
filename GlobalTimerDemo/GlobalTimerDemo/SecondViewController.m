@@ -8,11 +8,14 @@
 #import "SecondViewController.h"
 #import "NSObject+CXGlobalTimer.h"
 
-@interface CXView : UIView <CXGlobalTimerProtocol>
+@interface CXLabel : UILabel <CXGlobalTimerProtocol>
+
+@property (assign, nonatomic) int timerInterval;
+@property (assign, nonatomic) int count;
 
 @end
 
-@implementation CXView
+@implementation CXLabel
 
 - (instancetype)init
 {
@@ -23,12 +26,15 @@
     return self;
 }
 
-- (void)startTimer {
+- (void)startTimerWith:(NSTimeInterval)timerInterval {
+    self.timerInterval = timerInterval;
     self.globalTimerDelegate = self;
+    self.globalTimeInterval = timerInterval;
 }
 
 - (void)globalTimeDidChange:(id)sender {
-    NSLog(@"view 计时器回调");
+    self.count ++;
+    self.text = [NSString stringWithFormat:@"我%ds刷新一次:  %d", self.timerInterval, self.count];
 }
 
 - (void)dealloc
@@ -41,7 +47,13 @@
 
 @interface SecondViewController ()<CXGlobalTimerProtocol>
 
-@property(strong, nonatomic) CXView *aView;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet CXLabel *aLabel_1;
+@property (weak, nonatomic) IBOutlet CXLabel *aLabel_2;
+
+@property (assign, nonatomic) int count;
 
 @end
 
@@ -50,23 +62,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor yellowColor];
-    self.aView = [CXView new];
-    [self.view addSubview:self.aView];
-    self.aView.frame = CGRectMake(100, 100, 100, 100);
-    
-    [self startTimer];
 }
 
-- (void)startTimer {
+- (IBAction)startTimer:(id)sender {
     // 同时启动view和vc的定时器
-    [self.aView startTimer];
-    self.globalTimerDelegate = self;
+    [self.aLabel_1 startTimerWith:2];
+    [self.aLabel_2 startTimerWith:5];
     
-    self.globalTimeInterval = 2;
+    self.globalTimerDelegate = self;
+    self.globalTimeInterval = 1;
 }
+
+- (IBAction)pauseTimer:(id)sender {
+    self.globalTimerPause = YES;
+    self.aLabel_1.globalTimerPause = YES;
+    self.aLabel_2.globalTimerPause = YES;
+}
+
+- (IBAction)regainTimer:(id)sender {
+    self.globalTimerPause = NO;
+    self.aLabel_1.globalTimerPause = NO;
+    self.aLabel_2.globalTimerPause = NO;
+}
+
+
 
 - (void)globalTimeDidChange:(id)sender {
-    NSLog(@"vc 计时器回调");
+    self.count ++;
+    self.timeLabel.text = [NSString stringWithFormat:@"%d", self.count];
+    
+    self.label.text = [NSString stringWithFormat:@"我1s刷新一次:  %d", self.count];
 }
 
 - (void)dealloc

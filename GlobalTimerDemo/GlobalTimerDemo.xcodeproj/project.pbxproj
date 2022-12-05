@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A171697293D99160074334A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A171695293D99150074334A /* SecondViewController.m */; };
+		3A171698293D99160074334A /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A171696293D99150074334A /* SecondViewController.xib */; };
 		3A5185C5292BF37700A4F625 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5185C4292BF37700A4F625 /* AppDelegate.m */; };
 		3A5185C8292BF37700A4F625 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5185C7292BF37700A4F625 /* SceneDelegate.m */; };
 		3A5185CB292BF37700A4F625 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5185CA292BF37700A4F625 /* ViewController.m */; };
@@ -19,13 +21,11 @@
 		3A5185EC292BF37800A4F625 /* GlobalTimerDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5185EB292BF37800A4F625 /* GlobalTimerDemoUITestsLaunchTests.m */; };
 		3A51860A292BF38C00A4F625 /* UIViewController+CXDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5185F9292BF38C00A4F625 /* UIViewController+CXDealloc.m */; };
 		3A51860B292BF38C00A4F625 /* NSObject+CXGlobalTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5185FB292BF38C00A4F625 /* NSObject+CXGlobalTimer.m */; };
-		3A51860C292BF38C00A4F625 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3A518600292BF38C00A4F625 /* README.md */; };
 		3A51860D292BF38C00A4F625 /* NSTimer+CXTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A518601292BF38C00A4F625 /* NSTimer+CXTimer.m */; };
 		3A51860E292BF38C00A4F625 /* UIView+CXDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A518603292BF38C00A4F625 /* UIView+CXDealloc.m */; };
 		3A51860F292BF38C00A4F625 /* CXGlobalTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A518605292BF38C00A4F625 /* CXGlobalTimerManager.m */; };
 		3A518610292BF38C00A4F625 /* NSObject+Protect.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A518608292BF38C00A4F625 /* NSObject+Protect.m */; };
 		3A518611292BF38C00A4F625 /* NSMutableArray+CXWeakReferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A518609292BF38C00A4F625 /* NSMutableArray+CXWeakReferences.m */; };
-		3A518614292BF40F00A4F625 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A518612292BF40F00A4F625 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A171694293D99150074334A /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		3A171695293D99150074334A /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		3A171696293D99150074334A /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 		3A5185C0292BF37700A4F625 /* GlobalTimerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlobalTimerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5185C3292BF37700A4F625 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3A5185C4292BF37700A4F625 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -70,7 +73,6 @@
 		3A5185FD292BF38C00A4F625 /* NSMutableArray+CXWeakReferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+CXWeakReferences.h"; sourceTree = "<group>"; };
 		3A5185FE292BF38C00A4F625 /* CXGlobalTimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXGlobalTimerManager.h; sourceTree = "<group>"; };
 		3A5185FF292BF38C00A4F625 /* CXGlobalTimerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXGlobalTimerProtocol.h; sourceTree = "<group>"; };
-		3A518600292BF38C00A4F625 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3A518601292BF38C00A4F625 /* NSTimer+CXTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+CXTimer.m"; sourceTree = "<group>"; };
 		3A518602292BF38C00A4F625 /* NSObject+CXGlobalTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CXGlobalTimer.h"; sourceTree = "<group>"; };
 		3A518603292BF38C00A4F625 /* UIView+CXDealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CXDealloc.m"; sourceTree = "<group>"; };
@@ -79,8 +81,6 @@
 		3A518607292BF38C00A4F625 /* NSObject+Protect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Protect.h"; sourceTree = "<group>"; };
 		3A518608292BF38C00A4F625 /* NSObject+Protect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Protect.m"; sourceTree = "<group>"; };
 		3A518609292BF38C00A4F625 /* NSMutableArray+CXWeakReferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+CXWeakReferences.m"; sourceTree = "<group>"; };
-		3A518612292BF40F00A4F625 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		3A518613292BF40F00A4F625 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,8 +138,9 @@
 				3A5185C7292BF37700A4F625 /* SceneDelegate.m */,
 				3A5185C9292BF37700A4F625 /* ViewController.h */,
 				3A5185CA292BF37700A4F625 /* ViewController.m */,
-				3A518613292BF40F00A4F625 /* SecondViewController.h */,
-				3A518612292BF40F00A4F625 /* SecondViewController.m */,
+				3A171694293D99150074334A /* SecondViewController.h */,
+				3A171695293D99150074334A /* SecondViewController.m */,
+				3A171696293D99150074334A /* SecondViewController.xib */,
 				3A5185CC292BF37700A4F625 /* Main.storyboard */,
 				3A5185CF292BF37800A4F625 /* Assets.xcassets */,
 				3A5185D1292BF37800A4F625 /* LaunchScreen.storyboard */,
@@ -169,21 +170,20 @@
 		3A5185F8292BF38C00A4F625 /* GlobalTimer */ = {
 			isa = PBXGroup;
 			children = (
+				3A518604292BF38C00A4F625 /* UIViewController+CXDealloc.h */,
 				3A5185F9292BF38C00A4F625 /* UIViewController+CXDealloc.m */,
 				3A5185FA292BF38C00A4F625 /* UIView+CXDealloc.h */,
-				3A5185FB292BF38C00A4F625 /* NSObject+CXGlobalTimer.m */,
-				3A5185FC292BF38C00A4F625 /* NSTimer+CXTimer.h */,
-				3A5185FD292BF38C00A4F625 /* NSMutableArray+CXWeakReferences.h */,
-				3A5185FE292BF38C00A4F625 /* CXGlobalTimerManager.h */,
-				3A5185FF292BF38C00A4F625 /* CXGlobalTimerProtocol.h */,
-				3A518600292BF38C00A4F625 /* README.md */,
-				3A518601292BF38C00A4F625 /* NSTimer+CXTimer.m */,
-				3A518602292BF38C00A4F625 /* NSObject+CXGlobalTimer.h */,
 				3A518603292BF38C00A4F625 /* UIView+CXDealloc.m */,
-				3A518604292BF38C00A4F625 /* UIViewController+CXDealloc.h */,
+				3A5185FC292BF38C00A4F625 /* NSTimer+CXTimer.h */,
+				3A518601292BF38C00A4F625 /* NSTimer+CXTimer.m */,
+				3A5185FD292BF38C00A4F625 /* NSMutableArray+CXWeakReferences.h */,
+				3A518609292BF38C00A4F625 /* NSMutableArray+CXWeakReferences.m */,
+				3A5185FF292BF38C00A4F625 /* CXGlobalTimerProtocol.h */,
+				3A518602292BF38C00A4F625 /* NSObject+CXGlobalTimer.h */,
+				3A5185FB292BF38C00A4F625 /* NSObject+CXGlobalTimer.m */,
+				3A5185FE292BF38C00A4F625 /* CXGlobalTimerManager.h */,
 				3A518605292BF38C00A4F625 /* CXGlobalTimerManager.m */,
 				3A518606292BF38C00A4F625 /* MethodExchange */,
-				3A518609292BF38C00A4F625 /* NSMutableArray+CXWeakReferences.m */,
 			);
 			name = GlobalTimer;
 			path = ../../GlobalTimer;
@@ -301,9 +301,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A171698293D99160074334A /* SecondViewController.xib in Resources */,
 				3A5185D3292BF37800A4F625 /* LaunchScreen.storyboard in Resources */,
 				3A5185D0292BF37800A4F625 /* Assets.xcassets in Resources */,
-				3A51860C292BF38C00A4F625 /* README.md in Resources */,
 				3A5185CE292BF37700A4F625 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,7 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A518614292BF40F00A4F625 /* SecondViewController.m in Sources */,
+				3A171697293D99160074334A /* SecondViewController.m in Sources */,
 				3A518611292BF38C00A4F625 /* NSMutableArray+CXWeakReferences.m in Sources */,
 				3A51860E292BF38C00A4F625 /* UIView+CXDealloc.m in Sources */,
 				3A5185CB292BF37700A4F625 /* ViewController.m in Sources */,

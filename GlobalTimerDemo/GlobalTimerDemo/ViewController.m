@@ -20,7 +20,7 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    SecondViewController *vc = [SecondViewController new];
+    SecondViewController *vc = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
